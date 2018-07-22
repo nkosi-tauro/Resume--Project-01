@@ -4,7 +4,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font-family: 'Varela Round', sans-serif; */
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -108,6 +108,30 @@ width:110px;
 
 /* ---------------------------------------------------------------------------------- */
 
+/* EDUCATION SPAN */
+.html{
+  color: darkorange;
+  font-weight: 700;
+}
+.css1{
+  color: rgb(9, 18, 143);
+  font-weight: 700;
+}
+.js{
+  color: rgb(204, 204, 6);
+  font-weight: 700;
+}
+.jq1{
+  color: #333333;
+  font-weight: 700;
+}
+
+/* INTERESTS SPAN */
+.love{
+  background-color: rgb(247, 15, 65);
+  padding: 1px;
+}
+
 /* Links */
 a {
   color: #1CBCAD;
@@ -168,10 +192,15 @@ a:focus {
   color: rgb(226, 39, 77);
 }
 
+
+.skillhead{
+  font-weight: 300;
+  color: blue;
+}
 /* ---------------------------------------------------------------------------------- */
 /* About Wrap */
 .about {
-  background-image: url(../images/header-bg-4.jpg);
+  background-image: url("../images/header-bg2.jpg");
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -193,7 +222,7 @@ a:focus {
 }
 
 .skills1 {
-  background: url(../images/9.jpg) no-repeat center top  ;
+  background: url("../images/9.jpg") no-repeat center top  ;
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -205,7 +234,7 @@ a:focus {
 }
 
 .interests {
-  background-image: url(../images/header-bg-4.jpg);
+  background-image: url("../images/header-bg2.jpg");
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -217,14 +246,14 @@ a:focus {
 }
 
 .footer {
-  background: url(../images/3.1.jpg) no-repeat center top scroll ;
+  background: url("../images/header-bg.jpg") no-repeat center top scroll ;
   background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
 }
 
 .footer p {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .footer h5 {
