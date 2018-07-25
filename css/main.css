@@ -2,8 +2,8 @@
 
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-family: 'Varela Round', sans-serif; */
+
+  font-family: 'Varela Round', sans-serif;
   font-size: 16px;
   line-height: 1.428571429;
   color: #333333;
@@ -12,8 +12,7 @@ body {
 
 /* Titles */
 h1, h2, h4, h5, h6 {
-  font-family: "Raleway";
-  /* font-family: 'Varela Round', sans-serif; */
+  font-family: 'Varela Round', sans-serif;
   font-weight: 300;
   color: #333;
 }
@@ -118,7 +117,7 @@ width:110px;
   font-weight: 700;
 }
 .js{
-  color: rgb(204, 204, 6);
+  color: rgb(255, 255, 0);
   font-weight: 700;
 }
 .jq1{
@@ -130,6 +129,11 @@ width:110px;
 .love{
   background-color: rgb(247, 15, 65);
   padding: 1px;
+}
+
+.pro{
+  background-color: chartreuse;
+  font-weight: 500;
 }
 
 /* Links */
