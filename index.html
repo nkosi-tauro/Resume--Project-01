@@ -2,7 +2,7 @@
 <html>
   <head>
 	<title>Online CV</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="scss/style.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/png" href="images/curriculum (1).png">
 	<!-- jQuery Library -->
 	<script src="js/jquery v2.1.3.js"></script>
@@ -26,6 +26,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="nav " >
+        <nav>
+            <ul>
+				<li><a href="#header">HOME</a> </li>
+				<li><a href="#Education">EDUCATION</a> </li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#footwrap">CONTACT</a></li>
+            </ul>
+        </nav>
+       
+        </div>
 	<hr>
 	<!--Introduction  -->
 	<div class="about">
@@ -46,15 +58,15 @@
 	<div class="container desc">
 		<div class="row">
 
-				<div class="col-lg-2 col-lg-offset-1">
+				<div id="Education" class="col-lg-2 col-lg-offset-1">
 					<h5><t>EDUCATION</t></h5>
 				</div>
 				
 				<div class="col-lg-6">
 					<p><t>Certificate In Web Development</t><br/>
 						Life Choices Academy<br>
-						6 months Web development course, offered by Life Choices Academy in conjunction with Codespace.
-
+						6 months Web development course, offered by Life Choices Academy in conjunction with Codespace.<br>
+						Topics Covered : <span class="html">HTML</span>, <span class="css1">CSS</span>,  <span class="js">JavaScript</span> <span class="jq1"> JQuery</span>,<span class="jq2"> Nodejs</span> &<span class="jq3"> API & CRUD</span>
 					</p>
 				</div>
 				<div class="col-lg-3">
@@ -91,7 +103,8 @@
 						<imp><sm>COMPLETED</sm></imp></p>
 					
 				</div>
-	
+				<!-- SPRITE -->
+				<div class="mario"></div>
 		</div>
 		<br>
 		<hr>
@@ -101,99 +114,81 @@
 	<div class="skills1">
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5 ><t class="skillhead">SKILLS : WEB DEVELOPMENT</t></h5>
-				</div>
-
-
-				<div class="col-lg-6">
-					<div class="skillbar clearfix " data-percent="100%">
-						<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div>
-						<div class="skill-bar-percent">100%</div>
-					</div> 
-
-					<center><h4 style="color:#09ddcb; font-weight:bold;">CSS + Frameworks</h4></center>
-					
-					<div class="skillbar clearfix " data-percent="90%">
-						<div class="skillbar-title" style="background: #053555;"><span>CSS3</span></div>
-						<div class="skillbar-bar" style="background: #034b7a;"></div>
-						<div class="skill-bar-percent">90%</div>
-					</div> 
-
-
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-title" style="background: rgb(99, 1, 99);"><span>SASS/SCSS</span></div>
-						<div class="skillbar-bar" style="background: rgb(167, 2, 167);"></div>
-						<div class="skill-bar-percent">70%</div>
-					</div> 
-					
-					<center><h4 style="color:#7a8300; font-weight:bold;">JavaScript + Frameworks</h4></center>
-
-					<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-title" style="background: #eeff00;"><span>Javascript</span></div>
-						<div class="skillbar-bar" style="background: #eeff00;"></div>
-						<div class="skill-bar-percent">70%</div>
-					</div> 
-
-					<div class="skillbar clearfix " data-percent="100%">
-						<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-						<div class="skillbar-bar" style="background: #2c3e50;"></div>
-						<div class="skill-bar-percent">100%</div>
-					</div> 
-
-					<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-title" style="background: #0856a3;"><span>Node JS</span></div>
-						<div class="skillbar-bar" style="background: #0653a0;"></div>
-						<div class="skill-bar-percent">80%</div>
-					</div>
-	
-					
-				</div>
-				
+				<div class="col-1">
+						<center><h2 style="color:azure;">SKILLS</h2></center>
+						<br>
+				<ul id="skills">	
+						<center><h3>WEB DEVELOPMENT</h3></center>
+					<li>
+						HTML
+						<div class="bar-container">
+							<span class="bar" data-bar='{ "color": "#ff8800" }'>
+								<span class="pct">100%</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						CSS
+						<div class="bar-container">
+							<span class="bar" data-bar='{ "color": "#8b0097", "delay": 600 }'>
+								<span class="pct">80%</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						SASS
+						<div class="bar-container">
+							<span class="bar" data-bar='{ "color": "#8b0097", "delay": 1200 }'>
+								<span class="pct">70%</span>
+							</span>
+						</div>
+					</li>
+					<li>
+						JavaScript
+						<div class="bar-container">
+							<span class="bar" data-bar='{ "color": "#fbff00", "delay": 1800 }'>
+								<span class="pct">80%</span>
+							</span>
+						</div>
+					</li>
+				</ul>
+<!-- SOFTAWARE -->
+				<ul id="skills2">
+						<center><h3>SOFTWARE DEVELOPMENT</h3></center>	
+						<li>
+							C#
+							<div class="bar-container">
+								<span class="bar" data-bar='{ "color": "#27ae60" }'>
+									<span class="pct">62%</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							Unity Engine
+							<div class="bar-container">
+								<span class="bar" data-bar='{ "color": "#f2f2f2", "delay": 600 }'>
+									<span class="pct">70%</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							Xamarin
+							<div class="bar-container">
+								<span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+									<span class="pct">60%</span>
+								</span>
+							</div>
+						</li>
+					</ul>
 			</div>
-		</div>
 	</div>
-	<br>
-
-	<div class="skills1">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5 ><t class="skillhead">SKILLS : SOFTWARE DEVELOPMENT</t></h5>
-				</div>
-
-
-				<div class="col-lg-6">
-					<div class="skillbar clearfix " data-percent="67%">
-						<div class="skillbar-title" style="background: green;"><span>C#</span></div>
-						<div class="skillbar-bar" style="background: rgb(9, 230, 9);"></div>
-						<div class="skill-bar-percent">67%</div>
-					</div> 
-					
-					<div class="skillbar clearfix " data-percent="40%">
-						<div class="skillbar-title" style="background: #003558;"><span>Xamarin</span></div>
-						<div class="skillbar-bar" style="background: #034b7a;"></div>
-						<div class="skill-bar-percent">40%</div>
-					</div> 
-					
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-title" style="background: #000000;"><span>Unity</span></div>
-						<div class="skillbar-bar" style="background: #333333;"></div>
-						<div class="skill-bar-percent">70%</div>
-					</div> 
-				</div>
-				
-			</div>
-		</div>
-	</div>
+</div>
+</div>
 	<hr>
 
 	<div><!--ANIMATE-->
 	<!-- Projects Section -->
-	<div class="container desc">
+	<div id="projects" class="container desc">
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
@@ -334,14 +329,54 @@
 	</div>
 
 
-	<script>
-		$(document).ready(function(){
-			$('.skillbar').each(function(){
-				$(this).find('.skillbar-bar').animate({
-					width:$(this).attr('data-percent')
-				},6000);
-			});
-		});
+		<script>
+		;( function( $ ) {
+	"use strict";
+	
+	var $bars = $( ".bar" ),
+		methods = {
+			init: function() {
+				
+				// Bind events
+				methods.bindEvents();
+				
+			},
+			bindEvents: function() {
+
+				// Loop through each of the bars...
+				$bars.each( function() {
+
+					var $bar = $( this ),
+						$pct = $bar.find( ".pct" ),
+						data = $bar.data( "bar" );
+
+					setTimeout( function() {
+
+						$bar
+							.css( "background-color", data.color )
+							.animate({
+								"width": $pct.html()
+							}, data.speed || 3000, function() {
+
+								$pct.css({
+									"color": data.color,
+									"opacity": 1
+								});
+
+							});
+
+					}, data.delay || 0 );			
+
+				});
+
+			}
+		};
+	
+	// Initialize on page load
+	methods.init();	
+		
+})( jQuery );
 		</script>
+	
   </body>
 </html>

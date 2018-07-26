@@ -1,0 +1,707 @@
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* Titles */
+h1, h2, h4, h5, h6 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+/* Paragraph */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.nav {
+  background-color: whitesmoke;
+  padding: 1px;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+  z-index: 10;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+nav {
+  margin-left: 9%;
+  color: #1B2030;
+  font-size: 2em;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: 4.5%;
+  background-color: whitesmoke;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #1B2030;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.col-1 {
+  margin-left: -100px;
+}
+
+/*	3. Skills
+  ================================================================================ */
+#skills2 {
+  margin-left: 700px;
+  margin-top: -267px;
+  width: 50%;
+  max-width: 960px;
+}
+
+#skills2 li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+}
+
+#skills2 li .bar-container,
+#skills2 li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+
+#skills2 li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+
+#skills2 li .bar-container .bar {
+  top: 0;
+}
+
+#skills2 li .bar-container .pct {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+#skills {
+  margin: 0;
+  width: 50%;
+  max-width: 960px;
+}
+
+#skills li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+}
+
+#skills li .bar-container,
+#skills li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+
+#skills li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+
+#skills li .bar-container .bar {
+  top: 0;
+}
+
+#skills li .bar-container .pct {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* EDUCATION SPAN */
+.html {
+  color: darkorange;
+  font-weight: 700;
+}
+
+.css1 {
+  color: #09128f;
+  font-weight: 700;
+}
+
+.js {
+  color: yellow;
+  font-weight: 700;
+}
+
+.jq1 {
+  color: #333333;
+  font-weight: 700;
+}
+
+.jq2 {
+  color: #06b300;
+  font-weight: 700;
+}
+
+.jq3 {
+  color: #ad0000;
+  font-weight: 700;
+}
+
+/* INTERESTS SPAN */
+.love {
+  background-color: #f70f41;
+  padding: 1px;
+}
+
+.pro {
+  background-color: chartreuse;
+  font-weight: 500;
+}
+
+/* Links */
+a {
+  color: #1CBCAD;
+  word-wrap: break-word;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------
+    SECTION WRAPS
+  ---------------------------------------------------*/
+/* Header Wrap */
+.header {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 50vw;
+  min-height: 400px;
+  max-height: 650px;
+  min-width: 300px;
+  color: #eee;
+}
+
+.header:after {
+  content: "";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#1b2030));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1b2030 100%);
+}
+
+.header:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  background: #1B2030 url("../images/1.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: grow 60s  linear 10ms infinite;
+          animation: grow 60s  linear 10ms infinite;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: -2;
+}
+
+.header h1 {
+  font-size: 80px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header h3 {
+  font-size: 30px;
+  color: #ce0570;
+  margin-top: 100px;
+}
+
+.hello {
+  color: #e2274d;
+}
+
+.skillhead {
+  font-weight: 300;
+  color: blue;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* About Wrap */
+.about {
+  background-image: url("../images/header-bg2.jpg");
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.about h5 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.social {
+  color: ghostwhite;
+}
+
+.about i {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.skills1 {
+  background: url("../images/skill.jpg") no-repeat center top;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.skills1 h5 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.interests {
+  background-image: url("../images/header-bg2.jpg");
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.interests h5 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.footer {
+  background: url("../images/header-bg.jpg") no-repeat center top scroll;
+  background-size: cover;
+  /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.footer p {
+  color: white;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer t {
+  font-weight: 700;
+}
+
+.footer i {
+  padding-right: 8px;
+  /*color: #1abc9c;*/
+}
+
+/* social icons: */
+/* ---------------------------------------------------------------------------------- */
+/* Global Values */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.desc {
+  padding-top: 50px;
+}
+
+.desc p {
+  color: #2f2f2f;
+}
+
+.desc t {
+  color: #34495e;
+  font-weight: 700;
+}
+
+.desc imp {
+  padding: 6px;
+  color: white;
+  background: #34495e;
+}
+
+.desc more {
+  color: #616669;
+}
+
+sm {
+  font-size: 12px;
+}
+
+.desc .col-lg-3 {
+  text-transform: uppercase;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .row p.tight {
+  margin-bottom: 10px;
+}
+
+.container:before {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container:before {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:before {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.row:before {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Screen Width */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1024px;
+  }
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------- */
+.mario {
+  height: 60px;
+  width: 40px;
+  background: url("http://todayinwebdesign.com/example/css3-sprite-animation/images/mario-sprites.png") 0 0;
+  -webkit-animation: animate-mario 3s 0s steps(27) infinite, move-mario ease-in 3s 0s infinite;
+  animation: animate-mario 3s 0s steps(27) infinite, move-mario ease-in 3s 0s infinite;
+  position: absolute;
+  left: 100px;
+}
+
+@-webkit-keyframes animate-mario {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1080px 0;
+  }
+}
+
+@-webkit-keyframes move-mario {
+  0% {
+    left: 100px;
+  }
+  20% {
+    left: 100px;
+  }
+  50% {
+    left: 300px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes animate-mario {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1080px 0;
+  }
+}
+
+@keyframes move-mario {
+  0% {
+    left: 100px;
+  }
+  20% {
+    left: 100px;
+  }
+  50% {
+    left: 300px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
