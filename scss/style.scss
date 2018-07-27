@@ -47,7 +47,8 @@ body {
     color: #333333;
     background-color: #ffffff;
   }
-  
+ 
+
   /* Titles */
   
   h1, h2, h4, h5, h6 {
@@ -71,26 +72,27 @@ body {
   // NAV BAR
 
   
-.nav{
+ .nav{
   background-color: rgb(245, 245, 245);
   padding:1px;
   overflow:hidden;
   position: sticky;
   top: 1px;
   z-index:10;
-  transition: all 0.4s ease-in-out;
+    /* animation magic */
+    transition: all 0.4s ease-in-out;
 }
 
 nav{
  margin-left: 9%;
 color: #1B2030;
-font-size: 2em;
+font-size: 1.5em;
 }
 nav li {
   list-style: none;
   display: inline-block;
   text-align: center;
-  margin-left:4.5%;
+  margin-left:7.5%;
   background-color: rgb(245, 245, 245);
 }
 
@@ -239,6 +241,10 @@ nav li a{
     animation: grow 60s  linear 10ms infinite;
     transition:all 0.2s ease-in-out;
     z-index:-2
+  }
+  @keyframes grow{
+    0% { transform:scale(1)}
+    50% { transform:scale(1.2)}
   }
   .header h1 {
       font-size: 80px;

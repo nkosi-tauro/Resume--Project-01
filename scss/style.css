@@ -37,6 +37,7 @@ p {
   position: sticky;
   top: 1px;
   z-index: 10;
+  /* animation magic */
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -44,14 +45,14 @@ p {
 nav {
   margin-left: 9%;
   color: #1B2030;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 nav li {
   list-style: none;
   display: inline-block;
   text-align: center;
-  margin-left: 4.5%;
+  margin-left: 7.5%;
   background-color: whitesmoke;
 }
 
@@ -279,6 +280,28 @@ hr {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: -2;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 .header h1 {
