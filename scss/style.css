@@ -66,92 +66,16 @@ ul {
 }
 
 .col-1 {
-  margin-left: -100px;
+  text-align:center;
+/*   margin-left: 0px; */
+  font-size:18px
 }
 
 /*	3. Skills
   ================================================================================ */
-#skills2 {
-  margin-left: 700px;
-  margin-top: -267px;
-  width: 50%;
-  max-width: 960px;
-}
 
-#skills2 li {
-  position: relative;
-  margin-bottom: 32px;
-  padding-left: 6px;
-}
-
-#skills2 li .bar-container,
-#skills2 li .bar {
-  position: absolute;
-  left: 0;
-  height: 5px;
-  border-radius: 5px;
-  content: "";
-}
-
-#skills2 li .bar-container {
-  bottom: -8px;
-  width: 100%;
-  background-color: #333;
-  text-align: right;
-}
-
-#skills2 li .bar-container .bar {
-  top: 0;
-}
-
-#skills2 li .bar-container .pct {
-  position: absolute;
-  top: -19px;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
-}
-
-#skills {
-  margin: 0;
-  width: 50%;
-  max-width: 960px;
-}
-
-#skills li {
-  position: relative;
-  margin-bottom: 32px;
-  padding-left: 6px;
-}
-
-#skills li .bar-container,
-#skills li .bar {
-  position: absolute;
-  left: 0;
-  height: 5px;
-  border-radius: 5px;
-  content: "";
-}
-
-#skills li .bar-container {
-  bottom: -8px;
-  width: 100%;
-  background-color: #333;
-  text-align: right;
-}
-
-#skills li .bar-container .bar {
-  top: 0;
-}
-
-#skills li .bar-container .pct {
-  position: absolute;
-  top: -19px;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
+.languages i{
+margin-left:25px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -355,11 +279,13 @@ p {
 }
 
 .skills1 {
-  background: url("../images/skill.jpg") no-repeat center top;
+  background: url("https://images.unsplash.com/photo-1519645261061-3cee4d216668?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7e65cfbe1bc93607752fdea18a3e9909&auto=format&fit=crop&w=1050&q=80") no-repeat center top;
   background-size: cover;
   padding-top: 60px;
+  background-position-y:10px;
   padding-bottom: 60px;
   color: white;
+  background-attachment:fixed;
 }
 
 .skills1 h5 {
@@ -371,11 +297,12 @@ p {
 }
 
 .interests {
-  background-image: url("../images/header-bg2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1517012068311-53ed5975e234?ixlib=rb-0.3.5&s=add06a30d88f00dd0fbdcd6e7f4d905d&auto=format&fit=crop&w=951&q=80");
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
+  background-attachment:fixed
 }
 
 .interests h5 {
